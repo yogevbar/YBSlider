@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A268413655E3320D03DA95 /* libPods-YBSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 830834A7ABBF9800E90258F7 /* libPods-YBSlider.a */; };
 		DD95B10C1F4ACF45000D7ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95B10B1F4ACF45000D7ECF /* main.m */; };
 		DD95B10F1F4ACF45000D7ECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95B10E1F4ACF45000D7ECF /* AppDelegate.m */; };
 		DD95B1121F4ACF45000D7ECF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95B1111F4ACF45000D7ECF /* ViewController.m */; };
 		DD95B1151F4ACF45000D7ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD95B1131F4ACF45000D7ECF /* Main.storyboard */; };
 		DD95B1171F4ACF45000D7ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD95B1161F4ACF45000D7ECF /* Assets.xcassets */; };
 		DD95B11A1F4ACF45000D7ECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD95B1181F4ACF45000D7ECF /* LaunchScreen.storyboard */; };
+		DD95B1231F4ACF73000D7ECF /* YBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95B1221F4ACF73000D7ECF /* YBSlider.m */; };
+		DD95B1261F4ADE58000D7ECF /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95B1251F4ADE58000D7ECF /* UIColor+HexString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36AA4A684E5101B02396861C /* Pods-YBSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBSlider.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBSlider/Pods-YBSlider.release.xcconfig"; sourceTree = "<group>"; };
+		7F6C96EC80EBED3B5F745BAE /* Pods-YBSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBSlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBSlider/Pods-YBSlider.debug.xcconfig"; sourceTree = "<group>"; };
+		830834A7ABBF9800E90258F7 /* libPods-YBSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD95B1071F4ACF45000D7ECF /* YBSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD95B10B1F4ACF45000D7ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD95B10D1F4ACF45000D7ECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		DD95B1161F4ACF45000D7ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD95B1191F4ACF45000D7ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD95B11B1F4ACF45000D7ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD95B1211F4ACF73000D7ECF /* YBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSlider.h; sourceTree = "<group>"; };
+		DD95B1221F4ACF73000D7ECF /* YBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSlider.m; sourceTree = "<group>"; };
+		DD95B1241F4ADE58000D7ECF /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		DD95B1251F4ADE58000D7ECF /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A268413655E3320D03DA95 /* libPods-YBSlider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBB193B07B7DB347FC939EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F6C96EC80EBED3B5F745BAE /* Pods-YBSlider.debug.xcconfig */,
+				36AA4A684E5101B02396861C /* Pods-YBSlider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		177A140286C9CDDBB81088F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				830834A7ABBF9800E90258F7 /* libPods-YBSlider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD95B0FE1F4ACF45000D7ECF = {
 			isa = PBXGroup;
 			children = (
 				DD95B1091F4ACF45000D7ECF /* YBSlider */,
 				DD95B1081F4ACF45000D7ECF /* Products */,
+				0EBB193B07B7DB347FC939EA /* Pods */,
+				177A140286C9CDDBB81088F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +97,10 @@
 				DD95B1181F4ACF45000D7ECF /* LaunchScreen.storyboard */,
 				DD95B11B1F4ACF45000D7ECF /* Info.plist */,
 				DD95B10A1F4ACF45000D7ECF /* Supporting Files */,
+				DD95B1211F4ACF73000D7ECF /* YBSlider.h */,
+				DD95B1221F4ACF73000D7ECF /* YBSlider.m */,
+				DD95B1241F4ADE58000D7ECF /* UIColor+HexString.h */,
+				DD95B1251F4ADE58000D7ECF /* UIColor+HexString.m */,
 			);
 			path = YBSlider;
 			sourceTree = "<group>";
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD95B11E1F4ACF45000D7ECF /* Build configuration list for PBXNativeTarget "YBSlider" */;
 			buildPhases = (
+				DB4ACE72F904DE368C9B1848 /* [CP] Check Pods Manifest.lock */,
 				DD95B1031F4ACF45000D7ECF /* Sources */,
 				DD95B1041F4ACF45000D7ECF /* Frameworks */,
 				DD95B1051F4ACF45000D7ECF /* Resources */,
+				143BB52E67C4EEF78A4CCA1E /* [CP] Embed Pods Frameworks */,
+				50B9566B38F643CFE41DE80D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,14 +183,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		143BB52E67C4EEF78A4CCA1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBSlider/Pods-YBSlider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50B9566B38F643CFE41DE80D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBSlider/Pods-YBSlider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB4ACE72F904DE368C9B1848 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD95B1031F4ACF45000D7ECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD95B1261F4ADE58000D7ECF /* UIColor+HexString.m in Sources */,
 				DD95B1121F4ACF45000D7ECF /* ViewController.m in Sources */,
 				DD95B10F1F4ACF45000D7ECF /* AppDelegate.m in Sources */,
 				DD95B10C1F4ACF45000D7ECF /* main.m in Sources */,
+				DD95B1231F4ACF73000D7ECF /* YBSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +360,7 @@
 		};
 		DD95B11F1F4ACF45000D7ECF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6C96EC80EBED3B5F745BAE /* Pods-YBSlider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Y85BNADS4;
@@ -285,6 +373,7 @@
 		};
 		DD95B1201F4ACF45000D7ECF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AA4A684E5101B02396861C /* Pods-YBSlider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Y85BNADS4;
@@ -314,6 +403,7 @@
 				DD95B1201F4ACF45000D7ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
