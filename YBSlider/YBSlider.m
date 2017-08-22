@@ -8,7 +8,6 @@
 
 #import "YBSlider.h"
 #import "UIColor+HexString.h"
-#import <Masonry.h>
 
 @interface YBSlider(){
 //    float oldX, oldY;

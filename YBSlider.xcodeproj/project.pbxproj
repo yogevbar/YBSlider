@@ -88,6 +88,7 @@
 		DD95B1091F4ACF45000D7ECF /* YBSlider */ = {
 			isa = PBXGroup;
 			children = (
+				DDCB8CBD1F4C2E0A00B4DAB6 /* lib */,
 				DD95B10D1F4ACF45000D7ECF /* AppDelegate.h */,
 				DD95B10E1F4ACF45000D7ECF /* AppDelegate.m */,
 				DD95B1101F4ACF45000D7ECF /* ViewController.h */,
@@ -96,11 +97,9 @@
 				DD95B1161F4ACF45000D7ECF /* Assets.xcassets */,
 				DD95B1181F4ACF45000D7ECF /* LaunchScreen.storyboard */,
 				DD95B11B1F4ACF45000D7ECF /* Info.plist */,
-				DD95B10A1F4ACF45000D7ECF /* Supporting Files */,
 				DD95B1211F4ACF73000D7ECF /* YBSlider.h */,
 				DD95B1221F4ACF73000D7ECF /* YBSlider.m */,
-				DD95B1241F4ADE58000D7ECF /* UIColor+HexString.h */,
-				DD95B1251F4ADE58000D7ECF /* UIColor+HexString.m */,
+				DD95B10A1F4ACF45000D7ECF /* Supporting Files */,
 			);
 			path = YBSlider;
 			sourceTree = "<group>";
@@ -111,6 +110,15 @@
 				DD95B10B1F4ACF45000D7ECF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDCB8CBD1F4C2E0A00B4DAB6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DD95B1241F4ADE58000D7ECF /* UIColor+HexString.h */,
+				DD95B1251F4ADE58000D7ECF /* UIColor+HexString.m */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +198,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YBSlider/Pods-YBSlider-frameworks.sh",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-8/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -220,13 +231,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YBSlider-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
